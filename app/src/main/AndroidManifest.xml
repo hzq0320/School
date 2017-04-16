@@ -1,0 +1,71 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hdu.school">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="main.Welcome"
+            android:label="校园">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!--隐藏输入法： android:windowSoftInputMode="stateHidden"-->
+        <activity android:name="main.FragmentMainActivity"
+            android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.Main_FragmentActivity" />
+                <category android:name="android.intent.category.DEFAULT"/>
+                <!--用intent启动Activity时会自动加上Default，这里还是要加这句android.intent.category.DEFAULT-->
+                <category android:name="android.intent.category.Main_FragmentActivity" />
+            </intent-filter>
+        </activity>
+
+
+
+        <!--几个主要功能界面-->
+        <activity android:name="functions.Lost_and_found">
+            <intent-filter>
+                <action android:name="android.intent.action.School_Lost_And_Found" />
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.School_LostAndFound" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="functions.Second_hand">
+            <intent-filter>
+                <action android:name="android.intent.action.School_Second_Hand" />
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.School_SecondHand" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="functions.Make_friends">
+            <intent-filter>
+                <action android:name="android.intent.action.School_Make_Friends" />
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.School_MakeFriends" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="functions.More">
+            <intent-filter>
+                <action android:name="android.intent.action.School_More" />
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.School_More" />
+            </intent-filter>
+        </activity>
+
+
+
+    </application>
+
+    <!--添加网络权限-->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+</manifest>

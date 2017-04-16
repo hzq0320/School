@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:id="@+id/news_class"
+    android:layout_width="match_parent"
+    android:layout_height="30dp"
+    android:weightSum="10"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:background="#ffffff"
+    >
+
+
+    <ImageView
+        android:id="@+id/newsandbbs_selectclass_imageview"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/newsandbbs_selectsort_textview"
+        android:layout_width="0dp"
+        android:layout_weight="8"
+        android:maxLines="1"
+        android:layout_height="30dp"
+        android:text="全部学院"
+        android:layout_gravity="center"
+        android:gravity="center"
+        />
+</LinearLayout>

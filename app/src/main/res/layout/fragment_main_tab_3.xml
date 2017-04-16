@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_settingpage"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fcfcfc"
+    android:orientation="vertical" >
+
+
+	<LinearLayout style="@style/single_layout"
+		android:layout_height="200dp"
+		android:background="@drawable/background_settingpage_avater"
+		android:layout_marginLeft="8dp"
+		android:layout_marginRight="8dp"
+		android:gravity="center"
+		android:orientation="vertical">
+		<ImageView
+			android:layout_width="70dp"
+			android:layout_height="70dp"
+			android:background="@drawable/ic_settingpage_ow"
+			android:layout_gravity="center"
+			android:layout_marginBottom="20dp" />
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="登录/注册"
+			android:textColor="@color/white"
+			android:textSize="15dp"/>
+		<!--android:background="@drawable/avater_layout_selector"/>-->
+	</LinearLayout>
+
+
+	<LinearLayout style="@style/wrap_layout" >
+		<!-- 上圆角-->
+		<LinearLayout style="@style/top_layout">
+			<TextView style="@style/usertext" android:text="消息提醒"
+				android:id="@+id/msg"/>
+			<ImageView style="@style/img_arrow"/>
+		</LinearLayout>
+
+		<!-- 分割线 -->
+		<!--<View style="@style/bg_line"/>-->
+		<!-- 无圆角-->
+		<LinearLayout style="@style/mid_layout">
+			<TextView style="@style/usertext" android:text="我的聊天" />
+			<ImageView style="@style/img_arrow"/>
+		</LinearLayout>
+		<!--<View style="@style/bg_line"/>-->
+		<LinearLayout style="@style/mid_layout">
+			<TextView style="@style/usertext" android:text="我的关注" />
+			<ImageView style="@style/img_arrow"/>
+		</LinearLayout>
+		<!--<View style="@style/bg_line"/>-->
+
+		<!-- 下圆角-->
+		<LinearLayout style="@style/bottom_layout">
+			<TextView style="@style/usertext" android:text="待定" />
+			<ImageView style="@style/img_arrow"/>
+		</LinearLayout>
+
+	</LinearLayout>
+
+	<!-- 全圆角-->
+	<LinearLayout style="@style/wrap_layout">
+		<LinearLayout style="@style/single_layout">
+			<TextView style="@style/usertext" android:text="个人设置"/>
+			<ImageView style="@style/img_arrow"/>
+		</LinearLayout>
+	</LinearLayout>
+
+    
+
+</LinearLayout>

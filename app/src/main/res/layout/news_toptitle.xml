@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="58dp"
+    android:background="#FFFFFF">
+    <LinearLayout
+        android:id="@+id/layout_news_toptitle"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#FFFFFF"
+        >
+        <ImageView
+            android:id="@+id/newstitle_back_imageview"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingTop="5dp"
+            android:paddingRight="0dp"
+            android:paddingBottom="5dp"
+            android:background="#ffffff"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_return"
+            android:visibility="invisible"
+            />
+        <!--layout_weight这个属性为权重，让两个textview平分这个linearLayout-->
+        <TextView
+            android:id="@+id/newstitle_information_textview"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:gravity="center"
+            android:text="资讯"
+            android:textColor="#000000"
+            android:textSize="20dip"
+            android:layout_gravity="center"
+            android:background="@drawable/settingpage_selector"
+            />
+
+        <TextView
+            android:id="@+id/newstitle_bbs_textview"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:gravity="center"
+            android:text="论坛"
+            android:textColor="#000000"
+            android:textSize="20dip"
+            android:layout_gravity="center"
+            android:background="@drawable/settingpage_selector"
+            />
+
+        <ImageView
+            android:id="@+id/newstitle_createnew_imageview"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_createnew"
+            android:visibility="invisible"
+            />
+
+    </LinearLayout>
+
+    <!--<ImageView
+        android:id="@+id/newstitle_scrollbar_imageview"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:layout_below="@id/layout_news_toptitle"
+        android:scaleType="matrix"
+        android:src="@drawable/ic_scrollbar"
+        />-->
+
+</LinearLayout>

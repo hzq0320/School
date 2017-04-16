@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_messagepage"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fcfcfc"
+    android:orientation="vertical" >
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="50dp">
+
+		<TextView
+			android:text="联系人"
+			android:layout_width="0dp"
+			android:layout_weight="1"
+			android:layout_height="match_parent"
+			android:layout_gravity="center"
+			android:gravity="center"
+			android:id="@+id/messagepage_friends_textview" />
+
+		<TextView
+			android:text="通知"
+			android:layout_width="0dp"
+			android:layout_weight="1"
+			android:layout_height="match_parent"
+			android:layout_gravity="center"
+			android:gravity="center"
+			android:id="@+id/messagepage_messages_textview" />
+	</LinearLayout>
+
+	<ExpandableListView android:id="@+id/messagepage_friends_expandablelistview"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+	</ExpandableListView>
+
+</LinearLayout>
